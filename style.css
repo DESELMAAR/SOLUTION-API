@@ -1,0 +1,92 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* start variables */
+:root{
+  /* ### Primary */
+
+--Light-Cyan: hsl(193, 38%, 86%);
+--Neon-Green: hsl(150, 100%, 66%);
+
+/* ### Neutral */
+
+--Grayish-Blue: hsl(217, 19%, 38%);
+--Dark-Grayish-Blue: hsl(217, 19%, 24%);
+--Dark-Blue: hsl(218, 23%, 16%);
+
+}
+/* ************************************************* */
+
+/* css body */
+
+body{
+  font-family: 'Manrope', sans-serif;
+  background-color: var(--Dark-Blue);
+  height: 110vh;
+ max-width: 1444px;
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+}
+/* ******************************************** */
+/* container */
+.container{
+  width: 500px;
+  text-align: center;
+  margin: auto;
+  background: var(--Dark-Grayish-Blue);
+  padding: 1em;
+ 
+  flex-direction: column;
+  border-radius: 1em;
+}
+#myp{
+  color: var(--Neon-Green);
+letter-spacing: 3px;
+margin-bottom: 1.5em;
+}
+#mydiv{
+height: 150px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-content: center;
+font-size: 28px;
+color: var(--Light-Cyan);
+}
+#change{
+  padding: 2em;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background-color: var(--Neon-Green);
+ margin: auto;
+ transform: translateY(50px);
+ display: block;
+}
+
+#imgline{
+  margin-bottom: -20px;
+}
+
+/* responsive  */
+@media screen and (max-width:530px) {
+  #imgline{
+    width: 70%;
+  }
+  .container{
+    width: 400px;
+
+  }
+  body{
+    padding: 0 0.4em;
+  }
+  #mydiv{
+    height: fit-content;
+
+  }
+}
